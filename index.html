@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="bg" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текст в говор</title>
+    <link rel="stylesheet" href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <div id="browserSupport" class="alert alert-danger d-none">
+                            Вашият браузър не поддържа Web Speech API. Моля, използвайте модерен браузър като Chrome.
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea 
+                                class="form-control" 
+                                id="textInput" 
+                                rows="2" 
+                                placeholder="Въведете текст на български език..."
+                            ></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button id="speakButton" class="btn btn-primary">
+                                <i class="bi bi-play-fill me-2"></i>Прочети
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="speech.js"></script>
+</body>
+</html>
